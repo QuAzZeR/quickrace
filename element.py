@@ -38,13 +38,13 @@ class Enemie(object):
         self.width = Enemie.WIDTH
         self.height = Enemie.HEIGHT
         self.y = y
-        if lane == 1:
+        if lane == 0:
             self.x = Enemie.LEFT_LANE
             self.color=Enemie.LEFT_COLOR
-        elif lane == 2:
+        elif lane == 1:
             self.x= Enemie.MIDDLE_LANE
             self.color=Enemie.MIDDLE_COLOR
-        elif lane == 3:
+        elif lane == 2:
             self.x = Enemie.RIGHT_LANE
             self.color = Enemie.RIGHT_COLOR
         self.rect = pygame.Rect(self.x,self.y,self.height,self.width)
